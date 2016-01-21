@@ -15,7 +15,10 @@ class GithubUnfollower < Formula
   end
 
   def install
+
+    ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
     resource("PyGithub").stage { system "python", *Language::Python.setup_install_args(libexec/"vendor") }
+    
     bin.install "github_unfollower"
   end
 
