@@ -10,7 +10,7 @@ class GithubUnfollower < Formula
   sha256 "4d1f30852c6a1d69c75c9e4e3680b635abe393422a2786570539668a4b684279"
 
   def install
-    system "pip", "install", "PyGithub"    
+    system "pip install PyGithub" 
     bin.install "github_unfollower"
   end
 
