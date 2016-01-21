@@ -11,7 +11,7 @@ class GithubUnfollower < Formula
 
   resource "PyGithub" do
     url "https://pypi.python.org/packages/source/P/PyGithub/PyGithub-1.26.0.tar.gz"
-    sha256 "88d975182114d84bb276e15c8cdd823d5ad5a91becf4f825b80ce239e73e6457"
+    sha256 "59d0ceafd1c4fb73117aa35f515988b691a386046714f278521ba01d260ddefb"
   end
 
   def install
