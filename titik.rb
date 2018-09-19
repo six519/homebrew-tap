@@ -9,6 +9,7 @@ class Titik < Formula
     ENV["GOPATH"] = buildpath
     (buildpath/"src/github.com/six519/titik2").install buildpath.children
     cd "src/github.com/six519/titik2" do
+      system "go", "get", "github.com/go-sql-driver/mysql"
       system "go", "build", "-o", bin/"titik"
       prefix.install_metafiles
     end
