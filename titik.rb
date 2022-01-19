@@ -2,7 +2,7 @@ class Titik < Formula
   desc "Titik Programming Language/Interpreter Written In Go Lang"
   homepage ""
   url "https://github.com/six519/titik2/archive/v3.0.0.tar.gz"
-  sha256 "4a492fa3b765968be74dfcd22e49c729ed4b5262fd479a9d60e1b4e866716f9b"
+  sha256 "9b935d67e434decfd96df1afb145f02ebbb73137a7287b4b10821dec1606a2ce"
   depends_on "go" => :build
 
   def install
