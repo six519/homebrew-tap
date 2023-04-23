@@ -10,12 +10,8 @@ class Bloboats < Formula
     depends_on "sdl_net" => :build
   
     def install
-      ENV["TARGET"] = "MACOSX"
-      ENV["DATADIR_MACOSX"] = "#{share}/data"
-      ENV["BINARYDIR_MACOSX"] = bin
-      ENV["CONFIGDIR_MACOSX"] = bin
-      system "make"
-      system "make", "install"
+      system "make", "TARGET=MACOSX", "DATADIR_MACOSX=#{share}/data", "BINARYDIR_MACOSX=#{bin}", "CONFIGDIR_MACOSX=#{bin}"
+      system "make", "TARGET=MACOSX", "DATADIR_MACOSX=#{share}/data", "BINARYDIR_MACOSX=#{bin}", "CONFIGDIR_MACOSX=#{bin}", "install"
     end
   
     test do
