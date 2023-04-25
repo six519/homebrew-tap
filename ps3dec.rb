@@ -7,11 +7,7 @@ class Ps3dec < Formula
     depends_on "libomp" => :build
   
     def install
-      system "mkdir", "build"
-      system "cd", "build"
-      system "cmake", ".."
-      system "make"
-      system "cp", "Release/ps3dec", bin
+      system "mkdir", "build", "&&", "cd", "build", "&&", "cmake", "..", "&&", "make", "&&", "cp", "Release/ps3dec", bin
     end
   
     test do
