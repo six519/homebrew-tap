@@ -7,8 +7,6 @@ class Ps3dec < Formula
     depends_on "libomp" => :build
   
     def install
-      system "make", "TARGET=MACOSX", "DATADIR_MACOSX=#{share}/data", "BINARYDIR_MACOSX=#{bin}", "CONFIGDIR_MACOSX=#{bin}"
-      system "make", "TARGET=MACOSX", "DATADIR_MACOSX=#{share}/data", "BINARYDIR_MACOSX=#{bin}", "CONFIGDIR_MACOSX=#{bin}", "install"
       system "mkdir", "build"
       system "cd", "build"
       system "cmake", ".."
