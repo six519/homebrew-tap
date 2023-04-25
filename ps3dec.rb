@@ -9,7 +9,7 @@ class Ps3dec < Formula
     def install
       system "cmake", "."
       system "make"
-      system "cp", "Release/ps3dec", bin
+      system "cp", "Release/ps3dec", bin/"ps3dec"
     end
   
     test do
