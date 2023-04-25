@@ -7,7 +7,7 @@ class Ps3dec < Formula
     depends_on "libomp" => :build
   
     def install
-      system "cmake"
+      system "cmake", "."
       system "make"
       system "cp", "Release/ps3dec", bin
     end
