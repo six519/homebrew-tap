@@ -9,7 +9,7 @@ class Ntfs3gOsx < Formula
     depends_on "libgcrypt" => :build
   
     def install
-      system "./autogen.sh "
+      system "./autogen.sh"
       system "./configure", "--exec-prefix=/usr/local"
       system "make"
       system "make", "install"
